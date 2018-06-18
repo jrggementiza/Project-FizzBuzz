@@ -1,0 +1,21 @@
+<h1>Fizz Buzz powered by Django</h1>
+<ul> If a number is divisible by the Fizz Value, it'll print "Fizz"</ul>
+<ul> If a number is divisible by the Buzz Value, it'll print "Buzz"</ul>
+<ul> If a number is divisible by both the Fizz Value and the Buzz value, it'll print "Fizz Buzz!"</ul>
+<br>
+<form action="{% url 'results'%}">
+	<label for='fizz'>Fizz Value:</label>
+	<input type="number" id="number" name="fizz_value" value="3" />
+	<br>
+	<label for='buzz'>Buzz Value:</label>
+	<input type="number" id="number" name="buzz_value" value="5"/>
+	<br>
+	<label for='max'>Max Value:</label>
+	<input type="number" id="number" name="max_value" value="20"/>
+	<br>
+<!-- 	<textarea cols="5" rows="1" name="Buzz Value"></textarea>
+	<br>
+	<textarea cols="5" rows="1" name="Max Value"></textarea>
+	<br> -->
+	<input type="submit" value="Fizz Buzz!" />
+</form>

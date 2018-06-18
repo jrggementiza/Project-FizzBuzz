@@ -1,0 +1,9 @@
+<h1>Results</h1>
+
+<h2>Fizz Value - {{ fizz_value }} </h2>
+<h2>Buzz Value - {{ buzz_value }} </h2>
+<h2>Max Value - {{ max_value }} </h2>
+
+{% for idx, number in number_list %}
+<h3> {{ idx }} -> {{ number }} </h3>
+{% endfor %}
